@@ -575,7 +575,7 @@ html {
   border-color: hsl(var(--color-error));
 }
 
-.result p {
+.result p,h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 800;
@@ -584,14 +584,14 @@ html {
 }
 
 @media (min-width: 361px) {
-  .result p {
+  .result p,h1 {
     font-size: 3rem;
     line-height: 1;
   }
 }
 
 @media (min-width: 450px) {
-  .result p {
+  .result p,h1 {
     font-size: 3.75rem;
     line-height: 1;
   }
@@ -610,6 +610,27 @@ html {
   line-height: 1rem;
   font-style: italic;
   color: hsl(var(--color-error));
+}
+
+.attribution {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: hsl(var(--color-secondary));
+}
+
+.attribution a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: hsl(var(--color-primary));
+}
+
+.attribution a:hover {
+  color: hsl(var(--color-secondary));
+  text-decoration-line: underline;
 }
 
 @property --num-days {
@@ -845,6 +866,10 @@ html {
   margin-top: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1024,6 +1049,10 @@ html {
   padding-left: 1.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1034,9 +1063,22 @@ html {
   line-height: 2.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
@@ -1064,8 +1106,16 @@ html {
   color: hsl(var(--color-primary));
 }
 
+.text-secondaryColor {
+  color: hsl(var(--color-secondary));
+}
+
 .text-smokeyGreyColor {
   color: hsl(var(--color-smokey-grey));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .caret-primaryColor {

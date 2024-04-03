@@ -60,7 +60,7 @@
         @apply border-errorColor border;
     }
 
-    .result p {
+    .result p,h1 {
         @apply text-primaryColor xs:text-6xl 2xs:text-5xl text-4xl font-extrabold italic;
     }
 
@@ -71,6 +71,18 @@
 
     .error-label {
         @apply text-xs mt-2 ml-2 text-errorColor italic;
+    }
+
+    .attribution{
+        @apply text-sm text-center font-bold text-secondaryColor mt-8;
+    }
+    .attribution a{ 
+        @apply text-primaryColor font-700 text-sm;
+
+    }
+    
+    .attribution a:hover{ 
+       @apply text-secondaryColor underline
     }
 
     @property --num-days {
