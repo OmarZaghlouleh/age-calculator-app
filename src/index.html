@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="/dist/global-output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+</head>
+
+<body class="min-h-screen flex flex-col justify-center items-center bg-offWhiteColor">
+  <main class="min-h-screen flex flex-col justify-center items-center w-full p-8">
+    <div
+      class="container overflow-hidden bg-white flex flex-col sm:justify-start justify-center sm:items-start items-center sm:h-auto h-5/6 lg:w-largeContainerSize 
+      sm:w-11/12 w-fullScreenWidthWithSpace m-2 max-w-largeContainerSize sm:py-8 py-6 rounded-ee-big rounded-t-2xl rounded-es-2xl">
+      <!-- Inputs -->
+      <div class="inputs flex flex-row items-start mx-2 w-11/12">
+        <!-- Day Input -->
+        <div class="input-component">
+          <label class="input-label" for="day">DAY</label>
+          <input type="number" name="DD" id="day" placeholder="DD" class="input" maxlength="2">
+        </div>
+        <!-- Month Input -->
+        <div class=" input-component">
+          <label class="input-label" for="month">MONTH</label>
+          <input type="number" name="MM" id="month" placeholder="MM" class="input" maxlength="2">
+        </div>
+        <!-- Year Input -->
+        <div class="input-component">
+          <label class="input-label" for="year">YEAR</label>
+          <input type="number" name="YYYY" id="year" placeholder="YYYY" class="input" maxlength="4">
+        </div>
+      </div>
+      <!-- Button -->
+      <div class="button-component flex flex-row justify-start items-center sm:my-4 my-8 mx-8 w-11/12">
+        <hr class="bg-smokeyGreyColor h-0.8 my-4 sm:w-full w-2/5">
+        <button class="calc-button bg-primaryColor hover:scale-110 duration-300 hover:animate-pulse transition hover:bg-black w-buttonWidth h-buttonHeight
+           rounded-full flex justify-center items-center">
+          <img src="/assets/images/icon-arrow.svg" alt="" class="w-8 h-8 self-center">
+        </button>
+        <hr class="bg-smokeyGreyColor h-0.8 my-4 sm:w-0 w-2/5">
+      </div>
+      <!-- Result -->
+      <div class="result pl-6 self-start">
+        <p class="years">--<span>years</span></p>
+        <p class="months">--<span>months</span></p>
+        <p class="days">
+          - -<span>days</span></p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="/dist/script.js"></script>
+</body>
+
+</html>
