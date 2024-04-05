@@ -538,6 +538,8 @@ html {
 .input-component {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   width: 33.333333%;
   max-width: 9rem;
@@ -548,21 +550,14 @@ html {
 
 @media (min-width: 600px) {
   .input-component {
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 25%;
   }
-}
 
-.input-component:nth-child(2) {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 600px) {
   .input-component:nth-child(2) {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
   }
 }
 
@@ -575,7 +570,7 @@ html {
   border-color: hsl(var(--color-error));
 }
 
-.result p,h1 {
+.result p, h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 800;
@@ -584,14 +579,14 @@ html {
 }
 
 @media (min-width: 361px) {
-  .result p,h1 {
+  .result p, h1 {
     font-size: 3rem;
     line-height: 1;
   }
 }
 
 @media (min-width: 450px) {
-  .result p,h1 {
+  .result p, h1 {
     font-size: 3.75rem;
     line-height: 1;
   }
@@ -958,10 +953,6 @@ html {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1210,11 +1201,6 @@ html {
 }
 
 @media (min-width: 600px) {
-  .sm\:mx-1 {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
   .sm\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;

@@ -45,11 +45,11 @@
     }
 
     .input-component {
-        @apply flex flex-col justify-start items-start sm:w-3/12 w-1/3 max-w-36 mx-1;
+        @apply flex flex-col justify-start items-start sm:w-3/12 w-1/3 max-w-36 mx-1 sm:my-0 my-4;
     }
 
     .input-component:nth-child(2) {
-        @apply sm:mx-1 sm:my-0 my-4;
+        @apply sm:mx-1;
     }
 
     .input-component[error="true"] .input-label {
@@ -60,7 +60,7 @@
         @apply border-errorColor border;
     }
 
-    .result p,h1 {
+    .result p, h1 {
         @apply text-primaryColor xs:text-6xl 2xs:text-5xl text-4xl font-extrabold italic;
     }
 
@@ -73,16 +73,17 @@
         @apply text-xs mt-2 ml-2 text-errorColor italic;
     }
 
-    .attribution{
+    .attribution {
         @apply text-sm text-center font-bold text-secondaryColor mt-8;
     }
-    .attribution a{ 
+
+    .attribution a {
         @apply text-primaryColor font-700 text-sm;
 
     }
-    
-    .attribution a:hover{ 
-       @apply text-secondaryColor underline
+
+    .attribution a:hover {
+        @apply text-secondaryColor underline
     }
 
     @property --num-days {
